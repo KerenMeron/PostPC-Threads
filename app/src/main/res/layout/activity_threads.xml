@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thread_counter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="0"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/create_thread"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/async_counter"
+        android:text="Create"
+        android:onClick="createAsyncWorker"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/start_thread"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@id/create_async"
+        android:layout_marginTop="100dp"
+        android:text="Start"
+        android:onClick="startAsyncWorker"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/cancel_thread"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@id/start_async"
+        android:layout_marginTop="100dp"
+        android:text="Cancel"
+        android:onClick="cancelAsyncWorker"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
